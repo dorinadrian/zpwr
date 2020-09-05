@@ -265,6 +265,7 @@ source "$HOME/.oh-my-zsh/lib/key-bindings.zsh"
 
 #{{{                    MARK:forgit https://github.com/wfxr/forgit
 #**************************************************************
+export FORGIT_NO_ALIASES=true
 forgit_log=fglo
 forgit_diff=fgd
 forgit_add=fga
