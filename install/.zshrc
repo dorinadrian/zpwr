@@ -1557,7 +1557,7 @@ if [[ -d "$ZPWR_LOCAL" ]]; then
 fi
 
 if [[ -d "$ZSH/custom/plugins" ]]; then
-    exists zpl || alias zpl="cd $ZSH/custom/plugins"
+    alias zpl="cd $ZPWR_PLUGIN_DIR"
 fi
 
 alias numcmd='print $#commands'
