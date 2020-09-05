@@ -1366,9 +1366,11 @@ zstyle ':completion:*:manuals' separate-sections true
 # Ignore compsys completion functions
 #zstyle ':completion:*:functions' ignored-patterns '_*'
 
+# zstyle ':completion:*' ignored-patterns '*..' # BREAKS find -ctime <tab>
+
 # ignore .. as completion option
-zstyle ':completion:*' ignored-patterns '*..'
-zstyle ':completion:*' ignored-patterns '*.'
+zstyle ':completion:*:files' ignored-patterns '*..'
+zstyle ':completion:*:files' ignored-patterns '*.'
 #}}}***********************************************************
 
 #{{{                    MARK:Suffix aliases
