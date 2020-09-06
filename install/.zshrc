@@ -236,7 +236,6 @@ plugins=(
     lein
     spring
     django
-    pyenv
     python
     golang
     man
